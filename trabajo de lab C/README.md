@@ -284,7 +284,7 @@ artemis.exe      # Windows
 | 9 | Etapa 7: editar los 8 parámetros con controles cruzados | Configuración completa |
 | 10 | Etapa 8: puntaje y reporte final de desempeño | Puntaje, estadísticas y reporte |
 | 11 | Etapa 9: Makefile, script de compilación y este README | Archivos de compilación y documentación |
-| [COMPLETAR] | [Otras consultas del grupo] | |
+
 
 ### Cómo se validó y adaptó el código
 
