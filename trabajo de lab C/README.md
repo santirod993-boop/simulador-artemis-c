@@ -14,9 +14,13 @@ https://www.youtube.com/watch?v=b0S0NYoDEg4
 ## a) Integrantes y comisión
 
 | Integrantes        |  Legajo |
+
  solis tomas gabriel    29428
+ 
  Rodriguez Santiago     28890
+ 
  Zanier Fabricio        29653
+ 
  Boccalandro Fabricio   29495
  
 
