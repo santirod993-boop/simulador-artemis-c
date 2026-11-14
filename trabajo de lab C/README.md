@@ -6,7 +6,9 @@ UTN Facultad Regional Resistencia · Ingeniería en Sistemas de Información
 Simulador por consola, escrito en C, de la **Situación-Problema 4**: reingreso atmosférico, frenado aerodinámico, apertura de paracaídas y amerizaje de la cápsula Orion.
 
 ## link del repositorio y video 
+
 https://github.com/santirod993-boop/simulador-artemis-c
+
 https://www.youtube.com/watch?v=b0S0NYoDEg4
 
 ## a) Integrantes y comisión
