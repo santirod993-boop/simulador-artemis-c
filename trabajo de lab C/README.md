@@ -5,6 +5,9 @@ UTN Facultad Regional Resistencia · Ingeniería en Sistemas de Información
 
 Simulador por consola, escrito en C, de la **Situación-Problema 4**: reingreso atmosférico, frenado aerodinámico, apertura de paracaídas y amerizaje de la cápsula Orion.
 
+## link del repositorio y video 
+
+
 ## a) Integrantes y comisión
 
 | Integrantes        |  Legajo |
