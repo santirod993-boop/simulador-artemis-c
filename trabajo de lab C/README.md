@@ -7,7 +7,12 @@ Simulador por consola, escrito en C, de la **Situación-Problema 4**: reingreso 
 
 ## a) Integrantes y comisión
 
-| Integrante | Legajo |
+| Integrantes        |  Legajo |
+ solis tomas gabriel   29428
+ Rodriguez Santiago    28890
+ Zanier Fabricio       
+ Boccalandro Fabricio  29495
+ 
 
 
 **Comisión:** 
