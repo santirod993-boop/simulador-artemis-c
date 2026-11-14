@@ -8,16 +8,16 @@ Simulador por consola, escrito en C, de la **Situación-Problema 4**: reingreso 
 ## a) Integrantes y comisión
 
 | Integrantes        |  Legajo |
- solis tomas gabriel   29428
- Rodriguez Santiago    28890
- Zanier Fabricio       
- Boccalandro Fabricio  29495
+ solis tomas gabriel    29428
+ Rodriguez Santiago     28890
+ Zanier Fabricio        29653
+ Boccalandro Fabricio   29495
  
 
 
 **Comisión:** 
 
----
+comision D k1.4
 
 ## b) Escenario y reglas del juego
 
@@ -226,10 +226,30 @@ artemis.exe      # Windows
 ---
 
 ## e) Registro del uso de Inteligencia Artificial
+     ### Consultas realizadas
 
-> **Importante:** esta sección es obligatoria y la tiene que completar el grupo con lo que realmente hizo. La lista de consultas de abajo es un punto de partida; revisen, corrijan y agreguen lo que falte.
+#### Prompts principales (desarrollo del programa)
 
-**Herramientas utilizadas:** Claude (Anthropic), [COMPLETAR: otras herramientas, si usaron]
+| # | Prompt (resumido) | Qué se obtuvo |
+|---|---|---|
+| 1 | "Ayudame a programar paso a paso mi TP de Algoritmos y Estructuras de Datos de la UTN. Estoy aprendiendo C. Mi escenario es el 4 de Artemis […] El programa final tiene que funcionar por consola y tener menú, simulación por eventos, reporte final, condicionales, ciclos, funciones, arreglos, punteros, validaciones de entrada y archivos .c y .h […] Para cada etapa mostrame: la lógica en pseudocódigo, qué archivo debo crear o modificar, el código y una explicación, y el comando para compilar y las pruebas." | Plan de trabajo por etapas y resultados de referencia |
+| 2 | "Actuá como profesor de física con experiencia en mecánica clásica y reingreso atmosférico. Vamos a resolver la Situación-Problema 4 de forma analítica y paso a paso […] Mostrá cada fórmula, hacé el análisis dimensional, cuidá el signo del trabajo y de las fuerzas." | Método de resolución de los incisos |
+| 3 | "Resolvé el inciso (a) […] usá el teorema del trabajo y la energía mecánica. Calculá por separado ΔEc y ΔEp […] Explicá qué significa el signo del resultado y a dónde va esa energía." | Wroz ≈ −6,41 × 10¹¹ J |
+| 4 | "Resolvé el inciso (b): la aceleración media […] Expresá el resultado en m/s² y en múltiplos de g. Explicá el signo negativo y qué sentirían los astronautas." | a ≈ −27,44 m/s² ≈ 2,80 g |
+| 5 | "Resolvé el inciso (c) […] por dos métodos y verificá que coincidan: trabajo y energía, y leyes de Newton con cinemática." | F ≈ 323 890 N ≈ 3,17 × peso |
+| 6 | "Resolvé el inciso (d) […] explicá por qué ocurre el rebote con γ < 5,5° y por qué la desaceleración y el calentamiento se vuelven peligrosos con γ > 7,0°. Cerrá con una tabla que vamos a usar en los mensajes del programa." | Tabla de mensajes del ángulo |
+| 7 | "Etapa 1. Creá únicamente main.c con un menú que se repita con do while y use switch […] Leé la opción con fgets y strtol […] Si escribo letras, una línea vacía, un número con texto pegado o una opción fuera del menú, mostrá un mensaje y volvé a pedirla." | Menú y lectura validada de enteros |
+| 8 | "Etapa 2. Hacé que la opción 1 pida el ángulo de reingreso. Creá una función clasificarAngulo […] Leé el ángulo con strtod. Rechazá texto, números con basura al final, NaN e infinito." | Lectura de reales y clasificación del ángulo |
+| 9 | "Etapa 3. Creá fisica.h y fisica.c con funciones que reciban parámetros double y devuelvan el resultado. Definí la gravedad como macro […] Explicame qué va en el .h, qué en el .c y qué hace el guardia #ifndef." | Funciones de cálculo físico |
+| 10 | "Etapa 4. Creá una función iniciarMision […] Organizá la misión en cuatro eventos […] Si el ángulo está fuera de la ventana, terminá ese intento, mostrá un reporte de fallo con la causa y volvé al menú." | Simulación por eventos |
+| 11 | "Etapa 5. Ampliá el menú […] Agrupá los parámetros en un struct Configuracion […] guardá cada intento en un arreglo de hasta 10 resultados […] Usá un puntero para modificar la configuración y otro para actualizar el contador." | Configuración editable e historial |
+| 12 | "Mirá, fijate bien lo que hay que tener, esta es la actividad completa." (adjuntando la consigna) | Lista de requisitos faltantes y plan de etapas 6 a 9 |
+| 13 | "Vamos a la etapa 6 / 7 / 8 / 9" | Reorganización en main/simulador/validaciones, edición de los 8 parámetros, puntaje y reporte final, Makefile y README |
+
+> Nota: en las etapas 6 a 9 el contenido de cada etapa lo propuso la IA a partir de la revisión de la consigna (prompt 12); el grupo eligió avanzar con esas propuestas.
+
+
+**Herramientas utilizadas:** Claude (Anthropic) y gemini 
 
 ### Para qué se usó
 
@@ -258,8 +278,7 @@ artemis.exe      # Windows
 
 ### Cómo se validó y adaptó el código
 
-[COMPLETAR por el grupo. Por ejemplo: qué pruebas hicieron ustedes, qué errores encontraron, qué partes cambiaron o reescribieron, qué decisiones tomaron distinto de lo que propuso la IA y por qué, y cómo verificaron los resultados físicos.]
+primero dictamos las bases como realizar el codigo y con que propts la ia nos ayudaria a armar todo, definimos la idea y el menu y fijamos una situacion especifica que la ia tendria que interpretar como si fuera una persona experta en la materia, cada integrante se centro en bucar maneras mas sencillas de armar cada parte del codigo, a travez tambien de la realizacion de pseudocodigo dictado por la catedra
 
 ### Comprensión del código
-
-[COMPLETAR. Por ejemplo: cómo se repartieron el estudio de cada módulo para que todos puedan explicar cualquier parte en el coloquio.]
+cada integrante se centro en estudiar cada parte de la estructura de como funciona el codigo, no solo a nivel pseudocodigo sino viendo tambien la estrunctura de c a detalle, plasmando los conociemientos en el video proporcionado 
