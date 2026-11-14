@@ -7,12 +7,10 @@ Simulador por consola, escrito en C, de la **Situación-Problema 4**: reingreso 
 
 ## a) Integrantes y comisión
 
-| Integrante | Legajo | Usuario de GitHub | Parte principal a cargo |
-| [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
-| [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
-| [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
+| Integrante | Legajo |
 
-**Comisión:** [COMPLETAR]
+
+**Comisión:** 
 
 ---
 
